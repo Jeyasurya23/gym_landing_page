@@ -59,8 +59,12 @@ export default function WhyChooseUs() {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative overflow-hidden"
+            style={{
+              backgroundColor: AppColors.card,
+              willChange: "transform, opacity",
+              transform: "translateZ(0)",
+            }}
           >
 
             {/* Glow */}
@@ -81,6 +85,7 @@ export default function WhyChooseUs() {
             <img
               src="/images/why-choose-us.webp"
               alt="Why Choose Us"
+              loading="lazy"
               className="
                 relative
                 z-10

@@ -87,7 +87,7 @@ export default function Trainers() {
         {/* Trainer Cards */}
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
 
-          {trainers.map((trainer, index) => (
+          {trainers.map((trainer) => (
             <motion.div
               key={trainer.name}
               initial={{
@@ -101,7 +101,7 @@ export default function Trainers() {
               viewport={{ once: true }}
               transition={{
                 duration: 0.6,
-                delay: index * 0.15,
+                delay: 0,
               }}
               whileHover={{
                 y: -10,
@@ -117,10 +117,18 @@ export default function Trainers() {
               }}
             >
               {/* Image */}
-              <div className="relative overflow-hidden">
+              <div
+                className="relative overflow-hidden"
+                style={{
+                  backgroundColor: AppColors.card,
+                  willChange: "transform",
+                  transform: "translateZ(0)",
+                }}
+              >
                 <img
                   src={trainer.image}
                   alt={trainer.name}
+                  loading="lazy"
                   className="
                     w-full
                     h-[380px]
@@ -129,6 +137,10 @@ export default function Trainers() {
                     duration-500
                     group-hover:scale-110
                   "
+                   style={{
+                    transform: "translateZ(0)",
+                    backfaceVisibility: "hidden",
+                  }}
                 />
 
                 {/* Overlay */}
