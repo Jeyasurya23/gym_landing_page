@@ -10,7 +10,7 @@ const trainers = [
   {
     name: "John Carter",
     role: "Strength Coach",
-    image: "/images/trainer-1.jpg",
+    image: "/images/trainer-1.webp",
     instagram: "#",
     facebook: "#",
     twitter: "#",
@@ -18,7 +18,7 @@ const trainers = [
   {
     name: "Wilson",
     role: "Fitness Expert",
-    image: "/images/trainer-2.jpg",
+    image: "/images/trainer-2.webp",
     instagram: "#",
     facebook: "#",
     twitter: "#",
@@ -26,7 +26,7 @@ const trainers = [
   {
     name: "Michael Lee",
     role: "Personal Trainer",
-    image: "/images/trainer-3.jpg",
+    image: "/images/trainer-3.webp",
     instagram: "#",
     facebook: "#",
     twitter: "#",
@@ -34,7 +34,7 @@ const trainers = [
   {
     name: "Davis",
     role: "Nutrition Coach",
-    image: "/images/trainer-4.jpg",
+    image: "/images/trainer-4.webp",
     instagram: "#",
     facebook: "#",
     twitter: "#",
@@ -121,9 +121,11 @@ export default function Trainers() {
                 <img
                   src={trainer.image}
                   alt={trainer.name}
+                  loading="lazy"
                   className="
                     w-full
-                    h-[380px]
+                    h-[320px]
+                    md:h-[380px]    
                     object-cover
                     transition-transform
                     duration-500

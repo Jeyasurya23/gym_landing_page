@@ -6,21 +6,21 @@ const testimonials = [
   {
     name: "James Anderson",
     role: "Fitness Member",
-    image: "/images/testimonial-1.avif",
+    image: "/images/testimonial-1.webp",
     review:
       "The trainers are incredible and the environment keeps me motivated every day. I've achieved results I never thought possible.",
   },
   {
     name: "Sophia Miller",
     role: "Weight Loss Program",
-    image: "/images/testimonial-2.jpg",
+    image: "/images/testimonial-2.webp",
     review:
       "I lost over 15kg and gained confidence. The personalized coaching and nutrition support made all the difference.",
   },
   {
     name: "David Wilson",
     role: "Strength Training",
-    image: "/images/testimonial-3.jpg",
+    image: "/images/testimonial-3.webp",
     review:
       "The equipment, trainers, and community are top-notch. Every workout feels productive and enjoyable.",
   },
@@ -127,6 +127,7 @@ export default function Testimonials() {
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
+                  loading="lazy"
                   className="
                     w-14
                     h-14

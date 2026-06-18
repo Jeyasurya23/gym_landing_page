@@ -305,8 +305,9 @@ export default function Hero() {
 
             {/* Main Image */}
             <motion.img
-              src="/images/hero.png"
+              src="/images/hero.webp"
               alt="gym-image"
+              fetchPriority="high"
               className="
                 relative
                 z-10

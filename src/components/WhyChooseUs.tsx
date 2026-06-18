@@ -79,8 +79,9 @@ export default function WhyChooseUs() {
             />
 
             <img
-              src="/images/why-choose-us.jpg"
+              src="/images/why-choose-us.webp"
               alt="Why Choose Us"
+              loading="lazy"
               className="
                 relative
                 z-10
