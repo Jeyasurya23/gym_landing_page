@@ -121,7 +121,6 @@ export default function Trainers() {
                 <img
                   src={trainer.image}
                   alt={trainer.name}
-                  loading="lazy"
                   className="
                     w-full
                     h-[320px]
