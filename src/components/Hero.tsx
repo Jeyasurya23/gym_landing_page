@@ -54,7 +54,15 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden"
+      className="
+        relative
+        min-h-screen
+        overflow-hidden
+        bg-black
+        text-white
+        pt-28
+        md:pt-32
+      "
       style={{
         backgroundColor: AppColors.background,
       }}

@@ -12,7 +12,7 @@ import Features from "../components/Features";
 
 export default function Home() {
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <Program />
@@ -24,6 +24,6 @@ export default function Home() {
       <CtaBanner />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
