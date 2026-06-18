@@ -123,8 +123,7 @@ export default function Trainers() {
                   alt={trainer.name}
                   className="
                     w-full
-                    h-[320px]
-                    md:h-[380px]    
+                    h-[380px]
                     object-cover
                     transition-transform
                     duration-500
